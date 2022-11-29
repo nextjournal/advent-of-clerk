@@ -1,0 +1,7 @@
+{:paths ["dev" "src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        io.github.nextjournal/clerk {:git/sha "9c51111dcfead67c52bf3d2cd0facaa415312614"}
+        org.babashka/cli {:mvn/version "0.5.40"}}
+ 
+ :aliases {:nextjournal/clerk {:exec-fn nextjournal.clerk/build!
+                               :exec-args {:paths-fn advent-of-clerk.index/build-paths}}}}
