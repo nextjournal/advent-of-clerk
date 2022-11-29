@@ -1,13 +1,9 @@
 (ns user
-  (:require [advent-of-clerk.index :as index]
-            [nextjournal.clerk :as clerk]
-            [clojure.string :as str]
-            [babashka.fs :as fs]))
+  (:require [nextjournal.clerk :as clerk]
+            [advent-of-clerk.index :as index]))
 
+(clerk/serve! {:port 7878 :browse true})
 
 (comment
-  (clerk/build! {:index "src/advent_of_clerk/index.clj"
-                 :paths (index/build-paths)
-                 :browse true}))
-
+  (clerk/build! {:paths (index/build-paths) :browse true}))
 
