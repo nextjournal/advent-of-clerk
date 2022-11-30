@@ -1,6 +1,6 @@
-{:paths ["dev" "src" "resources"]
+{:paths ["src" "resources"]
  :deps {org.clojure/clojure {:mvn/version "1.11.1"}
-        io.github.nextjournal/clerk {:git/sha "9c51111dcfead67c52bf3d2cd0facaa415312614"}
+        io.github.nextjournal/clerk {:git/sha "bdf79084374fc89cd956ec076847c0845c80c911"}
         org.babashka/cli {:mvn/version "0.5.40"}}
  
  :aliases {:nextjournal/clerk {:exec-fn nextjournal.clerk/build!

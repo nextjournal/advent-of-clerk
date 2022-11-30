@@ -3,10 +3,9 @@
 A template repo for folks wanting to do [Advent of
  Code](https://adventofcode.com) with [Clerk](https://clerk.vision).
 
-
 ## Usage
 
-To play with this, you need to have [Clojure
+Fork & clone this repo, make sure you have [Clojure
 installed](https://clojure.org/guides/install_clojure), then run:
 
 ``` shell
