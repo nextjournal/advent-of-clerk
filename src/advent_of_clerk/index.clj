@@ -31,5 +31,6 @@
 ^::clerk/no-cache
 (clerk/html (into [:ul] (mapv (fn [path]
                                 (when-let [day (second (re-matches #".*day_(\d+).clj" path))]
-                                  [:li [:a {:href (clerk/doc-url path)} "Day " day]])) (build-paths))))
+                                  [:li [:a {:href (clerk/doc-url (str/replace path #"\.clj" ""))} "Day " day]]))
+                              (build-paths))))
 
