@@ -17,3 +17,6 @@ directory for changes and open Clerk in your browser.
 
 Open one of the files there, e.g. `day_01.clj`, make a change and save
 it. You should then see these changes reflected in the browser.
+
+Alternatively, you can use the jack-in command of your editor to
+start a REPL process.

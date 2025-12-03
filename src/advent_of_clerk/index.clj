@@ -22,7 +22,7 @@
                   (when (and (.exists f)
                              (< 3 (count (str/split-lines (slurp f)))))
                     (str f)))))
-        (range 1 26)))
+        (range 26)))
 
 
 #_(build-paths)

@@ -1,11 +1,12 @@
 {:paths ["src" "resources"]
  :deps {org.clojure/clojure {:mvn/version "1.12.0"}
-        io.github.nextjournal/clerk {:git/sha "d9cab25aae62029557cff3346e7bd06e878999cd"}
-        org.babashka/cli {:mvn/version "0.7.52"}
+        io.github.nextjournal/clerk {:mvn/version "0.18.1158"}
+        org.babashka/cli {:mvn/version "0.8.67"}
         ;; silence log warnings
         org.slf4j/slf4j-nop {:mvn/version "1.7.36"}}
  
- :aliases {:nextjournal/clerk {:exec-fn nextjournal.clerk/build!
+ :aliases {:dev {:extra-paths ["dev"]}
+           :nextjournal/clerk {:exec-fn nextjournal.clerk/build!
                                :exec-args {:index "src/advent_of_clerk/index.clj"
                                            :paths-fn advent-of-clerk.index/build-paths}
                                :main-opts ["-m" "babashka.cli.exec"]}}}
